@@ -1,0 +1,6 @@
+baseURL = 'https://blog.kingsonzhang.com'
+languageCode = 'en'
+defaultContentLanguage = 'zh-cn'
+title = "Kingson's Blog"
+theme = 'github.com/CaiJimmy/hugo-theme-stack-starter'
+disqusShortname = "kingson-1"
