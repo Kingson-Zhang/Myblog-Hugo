@@ -54,6 +54,7 @@ jobs:
   ServerAliveInterval 10
   HostKeyAlgorithms +ssh-rsa
   PubkeyAcceptedKeyTypes +ssh-rsa" > ~/.ssh/config
+  
               with:
                 switches: -avzr --delete
                 path: public/
