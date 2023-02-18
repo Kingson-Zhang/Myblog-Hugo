@@ -50,8 +50,8 @@ jobs:
               with:
                 switches: -avzr --delete
                 path: public/
-                remote_path: ${{ secrets.DEPLOY_PATH }}
-                remote_host: ${{ secrets.DEPLOY_HOST }}
-                remote_port: ${{ secrets.DEPLOY_PORT }}
-                remote_user: ${{ secrets.DEPLOY_USER }}
-                remote_key: ${{ secrets.DEPLOY_KEY }}
+                remote_path: ${{ production.secrets.DEPLOY_PATH }}
+                remote_host: ${{ production.secrets.DEPLOY_HOST }}
+                remote_port: ${{ production.secrets.DEPLOY_PORT }}
+                remote_user: ${{ production.secrets.DEPLOY_USER }}
+                remote_key: ${{ production.secrets.DEPLOY_KEY }}
