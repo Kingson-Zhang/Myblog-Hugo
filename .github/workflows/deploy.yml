@@ -47,12 +47,12 @@ jobs:
               run: hugo --minify --gc
 
             - name: Deploy 🚀
-              uses: trendyminds/github-actions-rsync@master
+              uses: burnett01/rsync-deployments@5.2.1
               with:
-                RSYNC_OPTIONS: -avzr --delete
-                RSYNC_TARGET: /etc/nginx/blog
-                RSYNC_SOURCE: public/
-              env:
-                SSH_HOSTNAME: ${{ secrets.DEPLOY_HOST }}
-                SSH_USERNAME: ${{ secrets.DEPLOY_USER }}
-                SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+                switches: -avzr --delete
+                path: public/
+                remote_path: ${{ secrets.DEPLOY_PATH }}
+                remote_host: ${{ secrets.DEPLOY_HOST }}
+                remote_port: ${{ secrets.DEPLOY_PORT }}
+                remote_user: ${{ secrets.DEPLOY_USER }}
+                remote_key: ${{ secrets.DEPLOY_KEY }}
