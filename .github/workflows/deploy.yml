@@ -49,7 +49,7 @@ jobs:
             - name: Deploy 🚀
               uses: burnett01/rsync-deployments@5.2.1
               with:
-                switches: -avzr --delete -e 'ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa'
+                switches: -avzr --delete -e 'ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa'
                 path: public/
                 remote_path: ${{ secrets.DEPLOY_PATH }}
                 remote_host: ${{ secrets.DEPLOY_HOST }}
