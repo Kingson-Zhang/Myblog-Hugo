@@ -50,11 +50,11 @@ jobs:
               uses: burnett01/rsync-deployments@5.2.1
               run: |
                 touch ~/.ssh/config
-                echo "Host *
-  ServerAliveInterval 10
-  HostKeyAlgorithms +ssh-rsa
+                echo "Host * \
+  ServerAliveInterval 10 \
+  HostKeyAlgorithms +ssh-rsa \
   PubkeyAcceptedKeyTypes +ssh-rsa" > ~/.ssh/config
-  
+
               with:
                 switches: -avzr --delete
                 path: public/
