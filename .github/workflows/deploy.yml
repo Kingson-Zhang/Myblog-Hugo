@@ -47,12 +47,15 @@ jobs:
               run: hugo --minify --gc
 
             - name: Deploy 🚀
-              uses: burnett01/rsync-deployments@5.2.1
-              with:
-                switches: -avzr --delete -e 'ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa'
-                path: public/
-                remote_path: ${{ secrets.DEPLOY_PATH }}
-                remote_host: ${{ secrets.DEPLOY_HOST }}
-                remote_port: ${{ secrets.DEPLOY_PORT }}
-                remote_user: ${{ secrets.DEPLOY_USER }}
-                remote_key: ${{ secrets.DEPLOY_KEY }}
+              env:
+                SSH_KEY: ${{secrets.DEPLOY_KEY}}
+                SSH_USER: ${{secrets.DEPLOY_USER}}
+                SSH_IP: ${{secrets.DEPLOY_HOST}}
+                SSH_PORT: ${{secrets.DEPLOY_PORT}}
+              run: |
+                mkdir -p ~/.ssh
+                echo "$SSH_KEY" > ~/.ssh/id_rsa
+                chmod 600 ~/.ssh/id_rsa
+                printf "Host blog\n    HostName $SSH_IP\n    User $SSH_USER\n    Port $SSH_PORT" > ~/.ssh/config
+                { ssh-keyscan -p $SSH_PORT $SSH_IP 2> /dev/null; } >> ~/.ssh/known_hosts  
+                rsync -az -v --delete public/* blog:/etc/nginx/blog/
