@@ -1,9 +1,16 @@
 {
-  "name": "Kingons's Blog",
-  "short_name": "Kingons's Blog",
-  "theme_color": "#2196f3",
+  "name": "Jason's Blog",
+  "short_name": "Jason's Blog",
+  "theme_color": "#0097a7",
   "background_color": "#2196f3",
-  "display": "browser",
-  "scope": "/",
-  "start_url": "/"
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/goal.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
