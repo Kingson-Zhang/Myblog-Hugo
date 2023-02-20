@@ -1,14 +1,15 @@
 ---
 title: Centos搭建LNMP开发环境
 tags:
-  - 网站建设
+  - CentOS
   - LNMP
 categories:
-  - 实验室
+  - 技术栈
 abbrlink: 75f6c94a
 date: 2018-09-11 18:26:04
 updated: 2019-5-19 14:07:00
-image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/lnmp_banner.png
+image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/c002565c4489112f8d06fbc7b44fe273.png
+description: Centos搭建LNMP实践
 ---
 
 因为需要部署ThinkPHP网站，所以就得在服务器上搭建LNMP网站环境，过程有点艰辛，把中途遇到的坑记录下来。
