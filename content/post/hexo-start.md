@@ -1,21 +1,20 @@
 ---
-title: Hexo再出发————如何在个人VPS上搭建博客
+title: Hexo搭建博客
 tags:
   - 博客
   - Hexo
-  - 网站建设
 categories:
 - 部落阁
 abbrlink: 2b175fcf
 date: 2018-08-24 10:44:14
-image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/hexo_logo.png
+lastmod: 2020-07-22 15:23:55
+image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/57be7727659a4d154e476ab2a5ed6084.jpg
+description: "记录一下搭建Hexo博客的过程"
 ---
 
 前段时间闲来无事，就想着自己搭建一个博客玩一玩。本来用的是[Wordpress](https://cn.wordpress.org/)的框架系统，但是奈何没有太好看的主题(好看的又要收费)，而且Wordpress相比于Hexo有点臃肿，加之VPS在国外，所以选择[Hexo](https://hexo.io)作为博客框架。
 
 <!-- more -->
-
-![wordplace](https://images-1257454527.cos.ap-chengdu.myqcloud.com/webdesign.jpg)
 
 ## 资源下载
 
@@ -74,8 +73,6 @@ image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/hexo_logo.png
 
 安装完包之后，接着在Git Bash输入：`hexo s`，然后在浏览器输入`localhost:4000`。
 
-![hexo](https://images-1257454527.cos.ap-chengdu.myqcloud.com/buildHexo_11.png)
-
 ## 服务端配置
 
 输入以下代码，进行系统更新：
@@ -83,8 +80,6 @@ image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/hexo_logo.png
 ```bash
     yum update -y
 ```
-
-![update](https://screenshot-1257454527.cos.ap-shanghai.myqcloud.com/lnmp/1.png)
 
 更新完系统，输入以下代码，可查看系统版本：
 
@@ -110,13 +105,9 @@ gpgcheck=0
 enabled=1
 ```
 
-![nginx](https://screenshot-1257454527.cos.ap-shanghai.myqcloud.com/lnmp/2.png)
-
 2、安装最新版的Nginx ，输入以下代码进行安装。
 
     yum install nginx -y
-
-![nginx-install](https://screenshot-1257454527.cos.ap-shanghai.myqcloud.com/lnmp/3.png)
 
 3、启动Nginx并设置开机自启，输入以下代码:
 
@@ -136,7 +127,7 @@ enabled=1
 
 将“/usr/share/nginx/html”改为“/usr/share/nginx/html/blog”。  
 
-> 源码安装Nginx请移步至
+> 源码安装Nginx请移步至[VPS开箱](/p/vps开箱/)
 
 ### 安装Git以及进行相关配置
 
@@ -154,8 +145,6 @@ enabled=1
     #设置密码
     passwd git
 ```
-
-![git](https://screenshot-1257454527.cos.ap-shanghai.myqcloud.com/lnmp/5.png)
 
 3、把git用户添加到sudo用户组中，输入以下代码`sudo vi /etc/sudoers`，打开sudoers文件，输入`:/root`进行搜索，搜索到代码行`root ALL=(ALL) ALL`,然后在这一行下添加以下代码`git ALL=(ALL) ALL`。输入完毕之后，按`wq!`强制保存退出vi。  
 
@@ -241,7 +230,4 @@ enabled=1
 
 8、在浏览器输入IP地址或者输入配置好的域名就可以访问了！
 
-> 还有另外一种较为方便的发布方式，请移步至[拥抱CircleCI](<https://blog.jasonzhang.xyz/posts/a8c0f7a2/>)
-
-> 源码：[Github](https://git.io/fjR0r)
->
+> 还有其他更为方便的CI/CD方案，比如Circle ci等，本文更新时我已经使用Github自带的CI/CD服务。
