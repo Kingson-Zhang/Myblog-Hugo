@@ -9,6 +9,7 @@ abbrlink: dea9f1c7
 date: 2018-08-24 11:50:05
 updated: 2019-06-19 14:20:00
 image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/184457-636806635954727169-16x9.png
+draft: true
 ---
 
 最近在找Java方向的工作，发现自己有很多不会的，尤其是底层架构和基础知识，所以写一篇文章让自己能够随时随地复习Java面试。

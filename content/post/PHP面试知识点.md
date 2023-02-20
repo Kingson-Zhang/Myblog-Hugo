@@ -9,6 +9,7 @@ abbrlink: ee5dd5e6
 date: 2018-08-24 11:50:05
 updated: 2019-06-19 14:17:00
 image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/php-1024x538.png
+draft: true
 ---
 
 PHP面试知识点总结
