@@ -26,7 +26,7 @@ image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/55346259377e540efee495789
 
 ## 将镜像写入U盘
 
-打开Rufus
+打开Rufus选择U盘并选择指定镜像进行镜像写入，等待完成即可。
 
 ## 安装Ubuntu
 
