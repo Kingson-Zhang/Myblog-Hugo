@@ -14,3 +14,11 @@ url = "https://github.com/Kingson-Zhang"
 
 [social.params]
 icon = "brand-github"
+
+[[social]]
+identifier = "telegram"
+name = "Telegram"
+url = "https://t.me/kingsonzhang"
+
+[social.parms]
+icon = "brand-telegram"
