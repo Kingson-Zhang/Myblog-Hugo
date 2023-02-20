@@ -7,7 +7,7 @@ categories: 分享境
 abbrlink: 88489d6d
 date: 2018-08-22 17:15:29
 updated: 2019-06-18 16:55:30
-thumbnail: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/LeetCode_Sharing.png
+image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/LeetCode_Sharing.png
 ---
 
 最近在LeetCode写一些算法，顺便用博客记录下代码，到时候就可以进行一些骚操作

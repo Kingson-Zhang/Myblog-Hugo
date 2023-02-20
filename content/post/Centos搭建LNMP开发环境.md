@@ -8,7 +8,7 @@ categories:
 abbrlink: 75f6c94a
 date: 2018-09-11 18:26:04
 updated: 2019-5-19 14:07:00
-thumbnail: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/lnmp_banner.png
+image: https://blog-1257454527.cos.ap-chengdu.myqcloud.com/lnmp_banner.png
 ---
 
 因为需要部署ThinkPHP网站，所以就得在服务器上搭建LNMP网站环境，过程有点艰辛，把中途遇到的坑记录下来。
