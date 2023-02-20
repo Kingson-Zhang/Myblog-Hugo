@@ -20,5 +20,5 @@ identifier = "telegram"
 name = "Telegram"
 url = "https://t.me/kingsonzhang"
 
-[social.parms]
+[social.params]
 icon = "brand-telegram"
