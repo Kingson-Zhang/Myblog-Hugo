@@ -70,13 +70,14 @@ awk '{print $4}' access.log | cut -c 14-18 | sort | uniq -c | sort -nr | head -n
 awk '{print $4}' access.log | cut -c 14-15 | sort | uniq -c | sort -nr | head -n {$N}
 ```
 ## 接口性能分析
+该命令需要配置Nginx的log_format
 ### 统计请求超过N秒的接口
 ```shell
 awk '{if($NF > {$N}) print $7}' access.log | sort | uniq -c | sort -nr | less 
 ```
 ### 统计请求超过N秒复合正则的接口
 ```shell
-awk '{if($NF > {$N} && $7~//) print $7}' | sort | uniq -c | sort -nr | less
+awk '{if($NF > {$N} && $7~/{pattern}/) print $7}' | sort | uniq -c | sort -nr | less
 ```
 ## TCP连接统计
 ### 查看当前活跃的TCP连接
