@@ -7,7 +7,7 @@ categories:
 tags:
     - 软路由
     - PVE
-image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/c1d4996340fc39805da35a2703c41403.jpg
+image: https://cdn.kingsonzhang.com/c1d4996340fc39805da35a2703c41403.jpg
 description: N5105软路由安装PVE
 ---
 
@@ -33,7 +33,7 @@ description: N5105软路由安装PVE
 
 ## 安装PVE
 使用Rufus选择指定磁盘以及对应的ISO镜像，安装模式要选择DD模式，按如下图。
-![Rufus](https://numbernone.oss-cn-hangzhou.aliyuncs.com/b8d9b131e7b468e9bbd7d9a0504329b0.png)
+![Rufus](https://cdn.kingsonzhang.com/b8d9b131e7b468e9bbd7d9a0504329b0.png)
 
 1.写入完成后插入软路由，BIOS设置为U盘启动。  
 2.选择安装的磁盘。  
@@ -77,15 +77,15 @@ BIOS中打开硬件直通（VT-d && VMX）
 > apt install ethtool -y  
 
 2.打开端口自动启动 & 重启系统
-![enp2s0](https://numbernone.oss-cn-hangzhou.aliyuncs.com/d5fa796e5937255c77b63c0bbec9c2cd.png)
+![enp2s0](https://cdn.kingsonzhang.com/d5fa796e5937255c77b63c0bbec9c2cd.png)
 3.确认所有网卡位置
 > lspci | grep -i 'eth'
 
-![ethtool](https://numbernone.oss-cn-hangzhou.aliyuncs.com/778ea04ad6178903d8fa7dcebce9eaf0.png)
+![ethtool](https://cdn.kingsonzhang.com/778ea04ad6178903d8fa7dcebce9eaf0.png)
 
 4.通过网口插拔确认设备位置
 使用`ethtool -i enp5s0`确定网卡PCI位置，使用`ethtool enp5s0`确定enp5s0对应物理网口位置。
-![ethtool](https://numbernone.oss-cn-hangzhou.aliyuncs.com/68587c7761009a1eebb79c3769cfa271.png)
+![ethtool](https://cdn.kingsonzhang.com/68587c7761009a1eebb79c3769cfa271.png)
 
 下面是我确认出来的对照表：  
 
@@ -98,7 +98,7 @@ BIOS中打开硬件直通（VT-d && VMX）
 
 ### 上传并安装OpenWrt
 1.在local下上传ISO镜像
-![op](https://numbernone.oss-cn-hangzhou.aliyuncs.com/55fe6dfad8f4bdc46c5a3b53f4a67673.png)
+![op](https://cdn.kingsonzhang.com/55fe6dfad8f4bdc46c5a3b53f4a67673.png)
 
 2.创建虚拟机，名称自定义，ISO镜像选择刚刚上传的镜像，系统配置默认，磁盘根据个人需要配置，也可以删除磁盘，CPU核心一般跟物理核心数量一样，内存按照需求设置，我设置为1GB了，网络选择默认，点击完成即可创建虚拟机。  
 
@@ -109,11 +109,11 @@ BIOS中打开硬件直通（VT-d && VMX）
 
 4.修改镜像类型
 删除cdrom配置，添加cache=unsafe配置
-![](https://numbernone.oss-cn-hangzhou.aliyuncs.com/117119214b083c2cbb90bd7f2ab0ec40.png)
+![](https://cdn.kingsonzhang.com/117119214b083c2cbb90bd7f2ab0ec40.png)
 5.启动OpenWrt
 将ide2设置为第一启动项，并禁用其他启动项，点击控制台即可启动OpenWrt，此时OpenWrt还无法通过URL正常访问，需要在控制台确定LAN口的IP以及子网掩码，将PC接入网桥网口，手动设置IP为LAN口所属的IP以及子网掩码，即可正常访问。  
 将其他网口设置为LAN口设备，并强制开启DHCP服务：
-![](https://numbernone.oss-cn-hangzhou.aliyuncs.com/e318bb261908def895fea61808900a44.png)
+![](https://cdn.kingsonzhang.com/e318bb261908def895fea61808900a44.png)
 将PC修改为DHCP获取IP后即可正常使用。
 
 ## 在LXC下安装Docker
@@ -143,4 +143,4 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 ## 完成
 输入IP:9000即可正常访问，至此PVE的安装就完成了，下面贴上网络拓补图。
-![](https://numbernone.oss-cn-hangzhou.aliyuncs.com/5b290f85d4dc51131cf2b6cf2ef9d2d1.png)
+![](https://cdn.kingsonzhang.com/5b290f85d4dc51131cf2b6cf2ef9d2d1.png)

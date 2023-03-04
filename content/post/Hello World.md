@@ -6,7 +6,7 @@ tags:
   - Hexo
 categories:
   - 部落阁
-image: 'https://numbernone.oss-cn-hangzhou.aliyuncs.com/63c8b073135c5d58e34254b6e6ba45f3.jpg'
+image: 'https://cdn.kingsonzhang.com/63c8b073135c5d58e34254b6e6ba45f3.jpg'
 abbrlink: 1c291ca3
 date: 2018-07-24 11:50:05
 Lastmod: 2018-07-24 11:50:05

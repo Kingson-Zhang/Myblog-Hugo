@@ -7,7 +7,7 @@ categories:
 abbrlink: 85e2bf86
 date: 2018-09-08 14:17:43
 updated: 2019-06-19 14:13:00
-image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/55346259377e540efee495789d4ba9b3.png
+image: https://cdn.kingsonzhang.com/55346259377e540efee495789d4ba9b3.png
 ---
 
 前端时间安装了Ubuntu18.04和Win10双系统，将安装过程记录下来，顺便给大家一个参考。

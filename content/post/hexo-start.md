@@ -8,7 +8,7 @@ categories:
 abbrlink: 2b175fcf
 date: 2018-08-24 10:44:14
 lastmod: 2020-07-22 15:23:55
-image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/57be7727659a4d154e476ab2a5ed6084.jpg
+image: https://cdn.kingsonzhang.com/57be7727659a4d154e476ab2a5ed6084.jpg
 description: "记录一下搭建Hexo博客的过程"
 ---
 

@@ -5,7 +5,7 @@ lastmod: 2022-09-14 19:30:23
 draft: false
 tags: ["Nginx", "VPS",]
 categories: ["技术栈",]
-image: "https://numbernone.oss-cn-hangzhou.aliyuncs.com/44c07ecbdd5aa0fcc8e31b38ac8408f2.png"
+image: "https://cdn.kingsonzhang.com/44c07ecbdd5aa0fcc8e31b38ac8408f2.png"
 description: "搬瓦工VPS折腾记"
 ---
 
@@ -122,7 +122,7 @@ WantedBy=multi-user.target
 
 访问IP地址，正常会出现如下结果：
 
-![OK](https://numbernone.oss-cn-hangzhou.aliyuncs.com/377ca9c9bcb148f3a57d52573df96c81.png)
+![OK](https://cdn.kingsonzhang.com/377ca9c9bcb148f3a57d52573df96c81.png)
 
 至此VPS就开箱好了。
 

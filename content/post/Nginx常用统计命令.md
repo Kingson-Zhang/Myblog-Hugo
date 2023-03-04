@@ -7,7 +7,7 @@ categories:
 tag: 
     - Nginx
     - Statistics
-image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/1d5e139f2c2df3cc3b5d42ead50b2523.jpeg
+image: https://cdn.kingsonzhang.com/1d5e139f2c2df3cc3b5d42ead50b2523.jpeg
 ---
 
 Nginx作为一个Web服务器，虽然本身具有非常强大的性能，但是部分场景下会出现请求过慢的情况，这个时候就需要对日志进行分析，查看接口性能分析。虽然有诸如[GoAccess](https://goaccess.io/)、[request-log-analyzer](http://request-log-analyzer.com/)等强大的日志分析工具，但是日常还是需要掌握一些进本的Nginx日志分析命令。

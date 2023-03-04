@@ -2,7 +2,7 @@
 title: "腾讯云搭建frp实现内网穿透"
 date: 2022-09-22 15:23:45
 draft: true
-image: https://numbernone.oss-cn-hangzhou.aliyuncs.com/84d2b7e745c17d5671a9bccd6f707125.jpg
+image: https://cdn.kingsonzhang.com/84d2b7e745c17d5671a9bccd6f707125.jpg
 description: 使用腾讯云轻量服务器搭建frp
 categories: 
     - 分享境
@@ -18,5 +18,7 @@ tags:
 > [Termius](https://termius.com/)  
 > 一台具有公网IP的服务器
 
-## 腾讯云
+## 腾讯云配置
 
+Frps是基于Golang开发的，所以需要配置环境，这里直接使用Docker免去环境配置的步骤
+`curl -sSL https://get.daocloud.io/docker | sh`
