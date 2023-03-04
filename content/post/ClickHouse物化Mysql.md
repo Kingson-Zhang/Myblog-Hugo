@@ -2,7 +2,7 @@
 title: "Clickhouse物化Mysql"
 date: 2022-09-22 15:23:45
 draft: false
-image: http://numbernone.oss-cn-hangzhou.aliyuncs.com/f8b4d2179682c362ab4922cacf5ca536.png
+image: https://cdn.kingsonzhang.com/f8b4d2179682c362ab4922cacf5ca536.png
 description: 
 categories:
   - 分享境
